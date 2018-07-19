@@ -1,0 +1,41 @@
+---
+title: "Map_Project"
+author: "William Matthews"
+date: "July 18, 2018"
+output: ioslides_presentation
+---
+##
+
+```{r, echo=FALSE, warning=FALSE}
+# Load leaflet library
+library(leaflet)
+
+# Create map with points of interest and add markers
+new_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=41.8722, lng=-87.6188,popup="Grant Park") %>%
+  addMarkers(lat=41.8758, lng=-87.6189,popup="Buckingham Fountain") %>%
+  addMarkers(lat=41.8826, lng=-87.6188,popup="Millennium Park") %>%
+  addMarkers(lat=41.8916, lng=-87.6053,popup="Navy Pier") %>%
+  addMarkers(lat=41.927826, lng=-87.652016,popup="Lincoln Park") %>%
+  addMarkers(lat=41.8676, lng=-87.614,popup="Shedd Aquarium") %>%
+  addMarkers(lat=41.8623, lng=-87.6167,popup="Soldier Field") %>%
+  addMarkers(lat=41.8663, lng=-87.617,popup="Field Museum") %>%
+  addMarkers(lat=41.7906, lng=-87.5831,popup="Museum of Science & Industry") %>%
+  addMarkers(lat=41.8663, lng=-87.6068,popup="Adler Planetarium") %>%
+  addMarkers(lat=41.8796, lng=-87.6237,popup="Art Institue of Chicago") %>%
+  addMarkers(lat=41.8299, lng=-87.6338,popup="White Sox Park") 
+
+
+```
+
+
+**Points of Interest in Chicago, Illinois**  
+July 18, 2018
+
+```{r, echo=FALSE, warning=FALSE}
+# Display map
+new_map
+```
+
+
